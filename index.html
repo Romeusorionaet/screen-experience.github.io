@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/images/logo.png"
+        width="100"
+        height="100"
+        alt="Logo do site: Ícone desenhado à mão de uma câmera de filmagem vintage em estilo esboço"
+      />
+      <h1 id="topo">Screen experience</h1>
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+      <aside class="sidebar">
+        <h2>TV Show</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#/" onClick="route()">Home</a></li>
+            <li><a href="#/vikings" onClick="route()">Vikings</a></li>
+            <li><a href="#/spartacus" onClick="route()">Spartacus</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="app" class="scrollbar" tabindex="-1"></main>
+
+      <aside class="anchors">
+        <h2>Neste Artigo</h2>
+        <ul>
+          <li><a href="#" data-anchor="info">Informações Gerais</a></li>
+          <li><a href="#" data-anchor="sobre">Sobre</a></li>
+          <li><a href="#" data-anchor="sinopse">Sinopse</a></li>
+          <li><a href="#" data-anchor="episodios">Épisódios</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="assets/images/logo.png"
+          alt="Logo Screen Experience"
+          width="60"
+          height="60"
+        />
+        <span>Screen Experience</span>
+      </div>
+      <p>© 2025 Screen Experience. Todos os direitos reservados.</p>
+      <nav class="footer-socials">
+        <a
+          href="https://www.linkedin.com/in/romeu-soares-87749a231/"
+          target="_blank"
+          aria-label="LinkedIn"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="#0A66C2"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <title>Linkedin</title>
+            <path
+              d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.87h4.56v14.13H.22V8.87zm7.92 0h4.38v1.93h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.05 5.47 7.01v8.58h-4.57v-7.6c0-1.82-.03-4.16-2.54-4.16-2.54 0-2.93 2-2.93 4.05v7.71H8.14V8.87z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://wa.me/5584981127596"
+          target="_blank"
+          aria-label="WhatsApp"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="#25D366"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <title>WhatsApp</title>
+            <path
+              d="M20.52 3.48A11.85 11.85 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.15 1.6 5.94L0 24l6.28-1.63a11.89 11.89 0 005.72 1.44c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.33zM12 21.77a9.84 9.84 0 01-5.08-1.39l-.36-.22-3.72.96.99-3.62-.24-.37a9.77 9.77 0 0116.4-10.97 9.81 9.81 0 01-7 16.65zM17.23 14.13c-.25-.12-1.47-.72-1.7-.8-.23-.08-.39-.12-.56.12s-.64.8-.79.96-.29.18-.54.06a7.4 7.4 0 01-2.17-1.34 8.27 8.27 0 01-1.54-1.9c-.16-.27 0-.42.12-.54.12-.12.25-.29.37-.43.12-.14.16-.25.25-.42.08-.16.04-.3-.02-.42-.06-.12-.56-1.34-.77-1.83-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.46-.01s-.43.06-.66.3a2.77 2.77 0 00-.95 2.24c0 1.12.96 2.2 1.1 2.35.14.14 1.9 2.9 4.61 4.07a19.28 19.28 0 002.16 1.06c.29.12.56.1.77.06.23-.04.71-.29.81-.57.12-.29.12-.54.08-.58z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="mailto:romeusoares14569@gmail.com"
+          aria-label="Email"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="#D44638"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <title>Email</title>
+            <path
+              d="M12 13.5l-11-7V20a2 2 0 002 2h18a2 2 0 002-2V6.5l-11 7zM23 4H1a1 1 0 00-1 1v1.8l12 7.64 12-7.64V5a1 1 0 00-1-1z"
+            />
+          </svg>
+        </a>
+
+        <a
+          href="https://github.com/Romeusorionaet"
+          target="_blank"
+          aria-label="GitHub"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="#333"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <title>Github</title>
+            <path
+              d="M12 .5C5.73.5.5 5.73.5 12.02c0 5.1 3.29 9.44 7.86 10.97.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.72.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.3 1.18-3.11-.12-.29-.51-1.44.11-3 0 0 .97-.31 3.18 1.19a11.04 11.04 0 012.9-.39c.98 0 1.97.13 2.9.39 2.21-1.5 3.18-1.19 3.18-1.19.62 1.56.23 2.71.11 3 .74.81 1.18 1.85 1.18 3.11 0 4.45-2.68 5.42-5.24 5.71.41.36.77 1.08.77 2.17 0 1.57-.01 2.84-.01 3.22 0 .31.21.67.8.56a11.53 11.53 0 007.87-10.96C23.5 5.73 18.27.5 12 .5z"
+            />
+          </svg>
+        </a>
+        <a href="#topo">Ir para o topo</a>
+      </nav>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
